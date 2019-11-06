@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Capsule()
+            .stroke(ImagePaint(image: Image("img1"), scale: 0.1), lineWidth: 20)
+            .frame(width: 300, height: 200)
     }
 }
 
